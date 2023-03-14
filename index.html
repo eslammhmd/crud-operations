@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------------import bootstrap ------------------------------ -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ------------------import data-table---------------------------------- -->
+
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css
+">
+
+    <!-- ----------------------------import box icon---------------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ---------------------import main style---------------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>crud Operations</title>
+</head>
+
+<body>
+
+    <header class="container-fluid bg-success text-center p-2">
+        <h1><img class="img-thumbnail img-fluid rounded" src="imgs/idea.png" alt=""><span class="text-light m-2">Book
+                Store</span></h1>
+    </header>
+
+    <div class="container mt-3">
+
+        <div class="row g-2">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mb-sm-2">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><img src="imgs/book name.png" alt=""></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name">
+                            <label for="name">Book Name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><img src="imgs/book-stack.png" alt=""></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="category">
+                            <label for="category">Book Category</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6 col-sm-12 mb-sm-2">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><img src="imgs/quntity.png" alt=""></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="count">
+                            <label for="count">Count</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><img src="imgs/price-2.png" alt=""></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="price">
+                            <label for="price">Price</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------controls------------------------------ -->
+        <div class="row g-2 my-3 text-center">
+            <div class="col">
+                <div class="d-flex justify-content-center gap-md-5 gap-3">
+                    <button id="numOfprod" class="btn btn-info  option">(20)</button>
+                    <button id="addProduct" class="btn btn-success"><i class='bx bxs-book-add option'></i></button>
+                    <!-- <button id="finUpD"  class="btn btn-info"><i class='bx bx-recycle option'></i></button> -->
+                    <button id="delAll" onclick="delAllProduct()" class="btn btn-danger"><i class='bx bx-message-square-x option'></i></button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row shadow-sm mb-5">
+            <table id="example" class="table table-striped col-sm-12" style="width:100%">
+                <thead class="bg-success text-light">
+                    <tr>
+                        <th><img src="imgs/id.png" alt=""></th>
+                        <th>Categories</th>
+                        <th>Book Name</th>
+                        <th>Price</th>
+                        <th>Count</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------------------import bootstrap files----------------------- -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- ----------------------------import data tables------------------------------ -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
+
+
+
+
+
+
+    <!-- --------------------------------my-js file------------------ -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
